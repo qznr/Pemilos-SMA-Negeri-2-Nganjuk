@@ -1,0 +1,382 @@
+@import url('zero-font-roboto.css');
+@import url('../font-awesome/css/font-awesome.css');
+@import url('zero-animation.css');
+
+body {
+	margin: 0;
+	font-family: 'Roboto Light';
+	background-image: url("gambar/Smadadepan.jpg");
+	overflow-x: hidden;
+}
+* {
+	transition: all 200ms ease-in-out;
+}
+::-webkit-scrollbar {
+	width:5px;
+	background-color:#CCDDEE;
+}
+::-webkit-scrollbar-thumb {
+	background-color:#21384f;
+}
+::-webkit-scrollbar-thumb:hover {
+	background-color: #2c3e90;
+}
+
+.clear {
+	clear: both;
+}
+/* Header */
+.navbar {
+	padding:1em;
+	border-radius: 0px;
+	width: 100%;
+}
+.navbar-default {
+	background-color: #21384f;
+	border:1px solid#21384f;
+}
+.navbar-brand {
+	font-size: 2em;
+	color:#EEE !important;
+	font-family: 'Roboto Bold';
+	text-shadow: 0px 0px 5px #333;
+}
+.logo {
+	margin: -29px -100px 0 -100px;
+	float:left;
+	height: 78px;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+	text-align: center;
+	font-family: Cambria, Georgia, serif;
+}
+.navbar-brand h1{
+	margin-top:-20px;
+	font-size: 48px;
+	line-height: 38px;
+	font-weight: lighter;
+}
+.navbar-brand h2 {
+	margin-top: -1px;
+	font-size: 15px;
+	font-weight: lighter;
+}
+.navbar-fixed {
+	position: fixed;
+	z-index: 99;
+}
+.hide-cover {
+	background-color: #21384f;
+	border:1px solid#2c3e59;
+}
+
+/* NAVBAR */
+.navbar-right {
+	float: right;
+}
+.nav > li {
+	float: left;
+}
+.nav > li > a {
+	font-family: 'Roboto Bold';
+	color: #EEE;
+}
+.nav > li > a:hover {
+	background-color: transparent;
+	/*opacity: 0.5;*/
+	color: #BBB !important;
+}
+.nav > li > a:focus {
+	background-color: transparent;
+}
+.nav > li > a.active {
+	background-color: #EEE;
+	color: #21384f !important;
+}
+.nav:after {
+	clear: both;
+}
+.icon-bar {
+	background-color: #888 !important;
+}
+.container {
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+a {
+	color: #21384f
+}
+
+/* COVER */
+.cover {
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	background-attachment: fixed;
+	background-color: #3e60aa;
+}
+
+.cover .box-title {
+	float: none;
+	margin:0px auto;
+	text-align: center;
+	padding-top: 16em;
+	text-shadow: 0px 0px 25px rgba(0,0,0,4);
+	z-index: 9;
+}
+.cover-overlay {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+	top: 0px;
+}
+.cover .box-title > h1 {
+	font-size: 6em;
+	color: #DDD;
+	font-family: 'Roboto Bold';
+	letter-spacing: -5px;
+	z-index: 999;
+}
+.color-title {
+	color: #2c3e90;
+}
+.cover .box-title > h2 {
+	font-size: 1.7em;
+	color: #EEE;
+}
+
+.row {
+	margin:0;
+}
+
+/* FOR COLOR */
+.danger, .btn-danger, .label-danger {
+	background-color: #1e2338;
+}
+.color-danger {
+	color: #ca2340;
+}
+.success, .btn-success, .label-success {
+	background-color: #2c7A76;
+}
+.color-success {
+	color: #2c7A76;
+}
+.warning, .btn-warning, .label-warning {
+	background-color: #fe9a4e;
+}
+.color-warning {
+	color: #fe9a4e;
+}
+.primary, .btn-primary, .label-primary {
+	background-color: #21384f;
+}
+.color-primary {
+	color: #21384f;
+}
+.info, .btn-info, .label-info {
+	background-color: #3e60aa;
+}
+.color-info {
+	color: #3e60aa;
+}
+.default, .btn-default, .label-default {
+	background-color: #CCDDEE;
+}
+.color-default {
+	color: #CCDDEE;
+}
+
+.btn-info:hover {
+	background-color: #3e60ee;
+}
+.btn-warning:hover {
+	background-color: #fc894e;
+}
+.color-white, .btn-link {
+	color: #EEE;
+}
+.btn-link:hover, .btn-link:focus, .btn-link:active {
+	text-decoration: none;
+}
+/* BUTTON */
+.btn {
+	border-radius: 0px;
+	padding:1em 2em;
+	border: none;
+}
+.btn:hover {
+	opacity: 0.9;
+}
+.btn-full {
+	width: 100%;
+}
+.btn-outline {
+	background-color: transparent;
+	border: 1px solid#EEE;
+}
+.btn-outline:hover, .btn-outline:focus {
+	background-color: #EEE;
+	color: #333;
+}
+/* PADDING */
+.padding-5 {
+	padding:5px;
+}
+.padding-10 {
+	padding:10px;
+}
+.padding-15 {
+	padding:15px;
+}
+.padding-20 {
+	padding:20px;
+}
+
+/* PANEL BOX */
+.zero-panel {
+	padding:1em;
+	font-family: 'Roboto';
+	color: #BDE;
+}
+.zero-panel-content {
+	float: none;
+	margin:0px auto;
+}
+.zero-panel p {
+	
+	font-family: 'Roboto';
+	/*text-align: justify;*/
+}
+.zero-panel h1 {
+	margin-bottom: 1em;
+}
+.box-center {
+	float: none;
+	margin:0 auto;
+}
+
+.media-border {
+	padding:2em;
+}
+.media-border i.fa, .icon-border {
+	border-radius: 100%;
+	height: 75px;
+	width: 75px;
+	line-height: 70px;
+	text-align: center;
+	font-size: 30px;
+}
+.media-border i.fa:hover, .icon-border:hover {
+	background-color: #FFF;
+	color: #333;
+}
+
+/* FORM */
+.form-control {
+	border-radius: 0;
+	background-color: transparent;
+	color: #EEE;
+	padding: 0.5em;
+}
+
+/* EASYPIECHART */
+.easy-pie-chart {
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+}
+.easyPieChart canvas, .easy-pie-chart canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.percent {
+	color: #EEE;
+}
+.list-inline li {
+	padding: 15px;
+}
+/* FOOTER */
+footer {
+	width: 100%;
+	color: #EEE;
+	padding: 2em;
+	font-family: 'Roboto Light'
+}
+footer ul {
+	margin:0px;
+	padding-left:20px;
+}
+footer a {
+	color: #5075c4;
+	font-weight: bold;
+}
+footer a:hover, footer a:focus {
+	text-decoration: none;
+	color: #CCC;
+}
+footer h3 {
+	font-family: 'Roboto Bold'
+}
+footer p {
+	font-size: 1.3em;
+}
+footer .img-support {
+	width: 64px;
+	/*height: 64px;*/
+}
+
+
+/* MEDIA SCREEN */
+@media (max-width: 992px) {
+	.navbar-default {
+		padding-bottom: -5px;
+	}
+	.nav {
+		width: 100%;
+		display: block;
+	}
+	.nav > li {
+		float: none;
+	}
+	.nav > li:last-child {
+		border-bottom: none;
+	}
+	.nav > li > a:hover {
+		background-color: rgba(250,250,250,0.9) !important;
+		color: #21384f !important;
+		font-weight: bold;
+	}
+	.collapse {
+		padding:10px 0px 0px 0px;
+		margin-top: 15px;
+	}
+	.cover .box-title > h1{
+		font-size: 4em;
+	}
+	.cover .box-title > h2 {
+		font-size: 1.3em;
+	}
+	.zero-panel p {
+		font-size: 1em;
+	}
+	.zero-panel h1 {
+		font-size: 2em;
+		margin-bottom: 0.5em;
+	}
+	.zero-modal .title {
+		font-size: 2em;
+	}
+	.zero-modal p {
+		font-size: 1em;
+	}
+	.quote {
+		font-size: 1.5em;
+	}
+}
+
